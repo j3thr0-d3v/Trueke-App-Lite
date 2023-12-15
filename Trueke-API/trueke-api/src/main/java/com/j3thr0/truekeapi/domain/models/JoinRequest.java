@@ -1,4 +1,4 @@
-package com.j3thr0.truekeapi.domain.model;
+package com.j3thr0.truekeapi.domain.models;
 
 public class JoinRequest {
 

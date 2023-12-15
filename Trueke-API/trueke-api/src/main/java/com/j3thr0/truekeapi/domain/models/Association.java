@@ -1,6 +1,6 @@
-package com.j3thr0.truekeapi.domain.model;
+package com.j3thr0.truekeapi.domain.models;
 
-import com.j3thr0.truekeapi.domain.model.base.ModelBase;
+import com.j3thr0.truekeapi.domain.models.base.ModelBase;
 import com.j3thr0.truekeapi.domain.vo.Address;
 import com.j3thr0.truekeapi.domain.vo.ContactInfo;
 import lombok.*;

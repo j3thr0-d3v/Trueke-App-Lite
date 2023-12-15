@@ -1,6 +1,6 @@
 package com.j3thr0.truekeapi;
 
-import com.j3thr0.truekeapi.domain.model.*;
+import com.j3thr0.truekeapi.domain.models.*;
 import com.j3thr0.truekeapi.domain.vo.Address;
 import com.j3thr0.truekeapi.domain.vo.ContactInfo;
 import com.j3thr0.truekeapi.domain.vo.ScheduleItem;
@@ -87,6 +87,9 @@ public class FakeMain {
                 .collaborators(List.of(c1))
                 .build();
 
+        System.out.println(a1.getId());
+        System.out.println(c1);
+        System.out.println(s1);
 
     }
 }

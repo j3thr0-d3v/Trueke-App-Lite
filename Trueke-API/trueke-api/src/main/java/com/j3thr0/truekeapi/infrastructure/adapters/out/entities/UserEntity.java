@@ -1,10 +1,12 @@
-package com.j3thr0.truekeapi.domain.model;
+package com.j3thr0.truekeapi.infrastructure.adapters.out.entities;
 
-import com.j3thr0.truekeapi.domain.model.base.ModelBase;
+import com.j3thr0.truekeapi.domain.enums.USER_ROLES;
+import com.j3thr0.truekeapi.infrastructure.adapters.out.entities.base.EntityBase;
 import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
 import lombok.*;
 import lombok.experimental.SuperBuilder;
+
+import java.util.Set;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -12,10 +14,7 @@ import lombok.experimental.SuperBuilder;
 @Setter
 @SuperBuilder
 @Entity
-@Table(
-        name = "USERS"
-)
-public abstract class User extends ModelBase<User> {
+public abstract class UserEntity extends EntityBase<UserEntity> {
 
     private String username;
     private String password;
@@ -32,4 +31,5 @@ public abstract class User extends ModelBase<User> {
     @Builder.Default
     private boolean enabled = true;
 
+    private Set<USER_ROLES> roles;
 }
